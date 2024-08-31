@@ -15,6 +15,7 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
 
     it('Deve fazer um pedido na loja Ebac Shop de ponta a ponta', () => {
         //TODO 
+        cy.setStatusSkipped()
     });
 
 

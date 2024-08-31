@@ -26,6 +26,7 @@ context('Funcionalidade Login', () => {
             cy.login(dados.usuario, dados.senha)
         })
         cy.get('.page-title').should('contain', 'Minha conta')
+        cy.url().should('be','minhaurlErrada')
     });
 
     it('Deve fazer login com sucesso - sem otimização', () => {
